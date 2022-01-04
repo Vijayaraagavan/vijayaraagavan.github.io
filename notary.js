@@ -1,6 +1,6 @@
 function loadbook(filename, displayName){
     let currentBook = "";
-    let url = "https://notary/" + filename;
+    let url = "https://" + filename;
 
 //reset our UI
 document.getElementById("filename").innerHTML = displayName;
