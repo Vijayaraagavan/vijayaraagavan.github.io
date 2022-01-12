@@ -8,7 +8,7 @@ document.getElementById("searchstat").innerHTML = '';
 document.getElementById("keyword").value="";
 
 //create a server request to load our book
-let xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 xhr.open("GET",url,true);
 xhr.send();
 
