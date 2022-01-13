@@ -1,3 +1,4 @@
+var xmlhttp;
 function loadbook(filename, displayName){
     let currentBook = "";
     let url = "/" + filename;
@@ -110,7 +111,7 @@ function performMark() {
         var element = document.getElementById("markme");
         element.scrollIntoView();
     };
-    var xmlhttp = new XMLHttpRequest();
+    xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
            return;
